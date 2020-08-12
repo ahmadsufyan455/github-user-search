@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Github User API</string>
+    <string name="title_splash">API From Github</string>
+    <string name="search_desc">search your user</string>
+    <string name="text_search">Let\'s find your user</string>
+    <string name="name">Ahmad Sufyan</string>
+    <string name="username">ahmadsufyan455</string>
+    <string name="location">Pringgabaya, Lombok Timur, Nusa Tenggara Barat</string>
+    <string name="blog">https://ahmadsufyan.my.id</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_result_found">Opss... No Result Found</string>
+    <string name="offline">Opss.. You\'re Offline</string>
+    <string name="no_follower">\nDon\'t Have Followers</string>
+    <string name="no_following">\nNot Following Someone</string>
+    <string name="favorite">Favorite User</string>
+    <string name="empty_favorite">You don\'t have favorite user</string>
+    <string name="reminder">Reminder at 9.00 AM</string>
+    <string name="setting">Settings</string>
+    <string name="notification">notification</string>
+    <string name="notification_title">Github User</string>
+    <string name="notification_text">Let\'s find popular user on github</string>
+</resources>

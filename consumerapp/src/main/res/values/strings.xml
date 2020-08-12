@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Consumer Favorite</string>
+    <string name="username">ahmadsufyan455</string>
+    <string name="favorite">Favorite User</string>
+    <string name="empty_favorite">You don\'t have favorite user</string>
+    <string name="consumer_fav">Consumer Favorite</string>
+</resources>
