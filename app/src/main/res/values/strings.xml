@@ -7,8 +7,8 @@
     <string name="username">ahmadsufyan455</string>
     <string name="location">Pringgabaya, Lombok Timur, Nusa Tenggara Barat</string>
     <string name="blog">https://ahmadsufyan.my.id</string>
-    <string name="no_result_found">Opss... No Result Found</string>
-    <string name="offline">Opss.. You\'re Offline</string>
+    <string name="no_result_found">Opss… No Result Found</string>
+    <string name="offline">Opss… You\'re Offline</string>
     <string name="no_follower">\nDon\'t Have Followers</string>
     <string name="no_following">\nNot Following Someone</string>
     <string name="favorite">Favorite User</string>
@@ -22,4 +22,9 @@
     <string name="success_remove_favorite">Successfully removed from favorites</string>
     <string name="reminder_off">Reminder is turned off</string>
     <string name="reminder_on">Reminder is set at 9.00 AM</string>
+    <string name="follower">FOLLOWER</string>
+    <string name="following">FOLLOWING</string>
+    <string name="title_language">Change Language</string>
+    <string name="summary_language">English</string>
+    <string name="language">language</string>
 </resources>

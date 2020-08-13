@@ -1,6 +1,8 @@
 package com.fynzero.finalsubmission.view.fragment
 
+import android.content.Intent
 import android.os.Bundle
+import android.provider.Settings
 import android.widget.Toast
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
@@ -10,6 +12,7 @@ import com.fynzero.finalsubmission.notification.AlarmReceiver
 
 class PreferenceFragment : PreferenceFragmentCompat() {
     private lateinit var switchPreference: SwitchPreference
+    private lateinit var language: Preference
 
     override fun onCreatePreferences(bundle: Bundle?, s: String?) {
         addPreferencesFromResource(R.xml.preferences)
@@ -18,6 +21,7 @@ class PreferenceFragment : PreferenceFragmentCompat() {
 
         switchPreference =
             findPreference(resources.getString(R.string.notification))!!
+        language = findPreference(resources.getString(R.string.language))!!
 
         switchPreference.onPreferenceChangeListener =
             Preference.OnPreferenceChangeListener { _, _ ->
@@ -33,6 +37,12 @@ class PreferenceFragment : PreferenceFragmentCompat() {
 
                 false
             }
+
+        language.onPreferenceClickListener = Preference.OnPreferenceClickListener {
+            val intent = Intent(Settings.ACTION_LOCALE_SETTINGS)
+            startActivity(intent)
+            false
+        }
 
     }
 }

@@ -3,9 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <SwitchPreference
-        android:defaultValue="false"
-        android:icon="@drawable/ic_baseline_notifications_24"
-        android:title="@string/reminder"
-        app:key="@string/notification" />
+        app:defaultValue="false"
+        app:icon="@drawable/ic_baseline_notifications_24"
+        app:key="@string/notification"
+        app:title="@string/reminder" />
+
+    <Preference
+        app:icon="@drawable/ic_baseline_g_translate_24"
+        app:key="@string/language"
+        app:summary="@string/summary_language"
+        app:title="@string/title_language" />
 
 </PreferenceScreen>

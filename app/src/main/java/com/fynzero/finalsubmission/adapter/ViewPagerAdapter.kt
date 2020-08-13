@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.fynzero.finalsubmission.R
 import com.fynzero.finalsubmission.view.fragment.FollowerFragment
 import com.fynzero.finalsubmission.view.fragment.FollowingFragment
 
@@ -24,8 +25,8 @@ class ViewPagerAdapter(private val context: Context, fm: FragmentManager) :
 
     override fun getPageTitle(position: Int): CharSequence? {
         return when (position) {
-            0 -> "FOLLOWING"
-            else -> "FOLLOWER"
+            0 -> context.resources.getString(R.string.following)
+            else -> context.resources.getString(R.string.follower)
         }
     }
 

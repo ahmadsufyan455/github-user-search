@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Github User</string>
+    <string name="title_splash">API From Github</string>
+    <string name="search_desc">Temukan user kamu</string>
+    <string name="text_search">Ayo temukan username kamu</string>
+    <string name="name">Ahmad Sufyan</string>
+    <string name="username">ahmadsufyan455</string>
+    <string name="location">Pringgabaya, Lombok Timur, Nusa Tenggara Barat</string>
+    <string name="blog">https://ahmadsufyan.my.id</string>
+    <string name="no_result_found">Opss… User tidak ditemukan</string>
+    <string name="offline">Opss… Koneksi kamu terputus</string>
+    <string name="no_follower">\nBelum punya pengikut</string>
+    <string name="no_following">\nBelum mengikuti seseorang</string>
+    <string name="favorite">User Favorit</string>
+    <string name="empty_favorite">Kamu belum memiliki user favorit</string>
+    <string name="reminder">Setel pengingat pukul 9.00 pagi</string>
+    <string name="setting">Pengaturan</string>
+    <string name="notification">notification</string>
+    <string name="notification_title">Github User</string>
+    <string name="notification_text">Ayo temukan user populer di github</string>
+    <string name="success_add_favorite">Berhasil ditambahkan ke favorit</string>
+    <string name="success_remove_favorite">Berhasil dihapus dari favorit</string>
+    <string name="reminder_off">Pengingat dimatikan</string>
+    <string name="reminder_on">Pengingat di setel ke pukul 9.00 pagi</string>
+    <string name="follower">PENGIKUT</string>
+    <string name="following">DI IKUTI</string>
+    <string name="title_language">Ganti bahasa</string>
+    <string name="summary_language">Indonesia</string>
+    <string name="language">language</string>
+</resources>
