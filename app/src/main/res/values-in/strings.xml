@@ -28,4 +28,7 @@
     <string name="title_language">Ganti bahasa</string>
     <string name="summary_language">Indonesia</string>
     <string name="language">language</string>
+    <string name="appwidget_text">Contoh</string>
+    <string name="add_widget">Tambah widget</string>
+    <string name="no_data">Tidak ada data</string>
 </resources>

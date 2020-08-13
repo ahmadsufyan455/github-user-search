@@ -27,4 +27,7 @@
     <string name="title_language">Change Language</string>
     <string name="summary_language">English</string>
     <string name="language">language</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="no_data">No Data</string>
 </resources>
