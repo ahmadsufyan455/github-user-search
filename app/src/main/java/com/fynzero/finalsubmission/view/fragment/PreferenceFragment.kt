@@ -23,11 +23,11 @@ class PreferenceFragment : PreferenceFragmentCompat() {
             Preference.OnPreferenceChangeListener { _, _ ->
                 if (switchPreference.isChecked) {
                     activity?.let { alarmReceiver.cancelAlarm(it) }
-                    Toast.makeText(activity, "Reminder is turned off", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(activity, R.string.reminder_off, Toast.LENGTH_SHORT).show()
                     switchPreference.isChecked = false
                 } else {
                     activity?.let { alarmReceiver.setRepeatingAlarm(it) }
-                    Toast.makeText(activity, "Reminder is set at 9.00 AM", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(activity, R.string.reminder_on, Toast.LENGTH_SHORT).show()
                     switchPreference.isChecked = true
                 }
 

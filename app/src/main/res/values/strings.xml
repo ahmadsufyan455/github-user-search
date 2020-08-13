@@ -7,7 +7,6 @@
     <string name="username">ahmadsufyan455</string>
     <string name="location">Pringgabaya, Lombok Timur, Nusa Tenggara Barat</string>
     <string name="blog">https://ahmadsufyan.my.id</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="no_result_found">Opss... No Result Found</string>
     <string name="offline">Opss.. You\'re Offline</string>
     <string name="no_follower">\nDon\'t Have Followers</string>
@@ -19,4 +18,8 @@
     <string name="notification">notification</string>
     <string name="notification_title">Github User</string>
     <string name="notification_text">Let\'s find popular user on github</string>
+    <string name="success_add_favorite">Successfully added to favorites</string>
+    <string name="success_remove_favorite">Successfully removed from favorites</string>
+    <string name="reminder_off">Reminder is turned off</string>
+    <string name="reminder_on">Reminder is set at 9.00 AM</string>
 </resources>

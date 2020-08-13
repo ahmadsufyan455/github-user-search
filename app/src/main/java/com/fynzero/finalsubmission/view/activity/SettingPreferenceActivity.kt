@@ -2,7 +2,6 @@ package com.fynzero.finalsubmission.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.preference.SwitchPreference
 import com.fynzero.finalsubmission.R
 import com.fynzero.finalsubmission.view.fragment.PreferenceFragment
 import kotlinx.android.synthetic.main.activity_setting_preference.*

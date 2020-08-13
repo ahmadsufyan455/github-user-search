@@ -4,7 +4,6 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.fynzero.finalsubmission.R
 import com.fynzero.finalsubmission.model.User
 import com.fynzero.finalsubmission.model.UserResponse
 import com.fynzero.finalsubmission.network.ApiClient

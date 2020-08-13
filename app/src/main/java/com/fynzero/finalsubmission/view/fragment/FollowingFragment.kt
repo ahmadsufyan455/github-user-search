@@ -59,7 +59,7 @@ class FollowingFragment : Fragment() {
             .get(FollowingViewModel::class.java)
 
         followingViewModel.setFollowing(username)
-        followingViewModel.getFollowing().observe(activity!!, Observer { users ->
+        followingViewModel.getFollowing().observe(requireActivity(), Observer { users ->
             if ((users != null) && (users.size != 0)) {
                 userAdapter.setUser(users)
             } else {

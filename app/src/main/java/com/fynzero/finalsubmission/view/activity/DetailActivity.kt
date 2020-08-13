@@ -80,13 +80,13 @@ class DetailActivity : AppCompatActivity() {
                 contentResolver.insert(CONTENT_URI, values)
                 statusFavorite = !statusFavorite
                 setStatusFavorite(statusFavorite)
-                Toast.makeText(this, "Successfully added to favorites", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, R.string.success_add_favorite, Toast.LENGTH_SHORT).show()
             } else {
                 uriWithId = Uri.parse("$CONTENT_URI/$id")
                 contentResolver.delete(uriWithId, null, null)
                 statusFavorite = !statusFavorite
                 setStatusFavorite(statusFavorite)
-                Toast.makeText(this, "Successfully removed from favorites", Toast.LENGTH_SHORT)
+                Toast.makeText(this, R.string.success_remove_favorite, Toast.LENGTH_SHORT)
                     .show()
             }
         }
