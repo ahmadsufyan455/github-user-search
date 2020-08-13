@@ -1,12 +1,12 @@
 package com.fynzero.finalsubmission.view.activity
 
-import android.content.ContentValues
 import android.database.Cursor
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.core.content.contentValuesOf
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.fynzero.finalsubmission.R
@@ -72,11 +72,12 @@ class DetailActivity : AppCompatActivity() {
         setStatusFavorite(statusFavorite)
         btn_favorite.setOnClickListener {
             if (!statusFavorite) {
-                val values = ContentValues()
-                values.put(DatabaseContract.UserColumn._ID, id)
-                values.put(DatabaseContract.UserColumn.USERNAME, username)
-                values.put(DatabaseContract.UserColumn.TYPE, type)
-                values.put(DatabaseContract.UserColumn.AVATAR, avatar)
+                val values = contentValuesOf(
+                    DatabaseContract.UserColumn._ID to id,
+                    DatabaseContract.UserColumn.USERNAME to username,
+                    DatabaseContract.UserColumn.TYPE to type,
+                    DatabaseContract.UserColumn.AVATAR to avatar
+                )
                 contentResolver.insert(CONTENT_URI, values)
                 statusFavorite = !statusFavorite
                 setStatusFavorite(statusFavorite)
