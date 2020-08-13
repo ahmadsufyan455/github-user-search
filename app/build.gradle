@@ -25,7 +25,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField "String", "TOKEN", '"e40c34a2a097d56ae9509a5ab8c47d44"'
+        buildConfigField "String", "TOKEN", '"3541a6a941ab3208817df38e63a1921ef5cf6452"'
     }
 
     buildTypes {
