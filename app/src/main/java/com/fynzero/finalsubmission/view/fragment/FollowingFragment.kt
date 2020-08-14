@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -67,6 +68,11 @@ class FollowingFragment : Fragment() {
                 rv_following.visibility = View.INVISIBLE
                 no_following.visibility = View.VISIBLE
             }
+        })
+
+        followingViewModel.noConnection().observe(requireActivity(), Observer { res ->
+            no_internet_connection.visibility = View.VISIBLE
+            Toast.makeText(activity, res, Toast.LENGTH_SHORT).show()
         })
 
         userAdapter.setOnItemClickCallback(object : UserAdapter.OnItemClickCallback {

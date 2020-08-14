@@ -16,11 +16,13 @@ class UserDetailViewModel : ViewModel() {
     }
 
     private val user = MutableLiveData<User>()
+    private val noConnection = MutableLiveData<String>()
 
     fun setDetail(username: String) {
         ApiClient.instance.getDetail(username).enqueue(object : Callback<User> {
             override fun onFailure(call: Call<User>, t: Throwable) {
                 Log.d(TAG, t.message.toString())
+                noConnection.value = "Check your connection"
             }
 
             override fun onResponse(call: Call<User>, response: Response<User>) {
@@ -33,5 +35,9 @@ class UserDetailViewModel : ViewModel() {
 
     fun getDetail(): LiveData<User> {
         return user
+    }
+
+    fun noConnection(): LiveData<String> {
+        return noConnection
     }
 }

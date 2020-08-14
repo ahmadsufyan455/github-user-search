@@ -61,6 +61,10 @@ class DetailActivity : AppCompatActivity() {
             }
         })
 
+        userDetailViewModel.noConnection().observe(this, Observer { res ->
+            progressDetail.visibility = View.INVISIBLE
+        })
+
         btn_back.setOnClickListener { finish() }
 
         // set user helper

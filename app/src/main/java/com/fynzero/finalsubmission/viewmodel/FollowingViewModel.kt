@@ -16,11 +16,13 @@ class FollowingViewModel : ViewModel() {
     }
 
     private val userList = MutableLiveData<ArrayList<User>>()
+    private val noConnection = MutableLiveData<String>()
 
     fun setFollowing(username: String) {
         ApiClient.instance.getFollowing(username).enqueue(object : Callback<ArrayList<User>> {
             override fun onFailure(call: Call<ArrayList<User>>, t: Throwable) {
                 Log.d(TAG, t.message.toString())
+                noConnection.value = "Check your connection"
             }
 
             override fun onResponse(
@@ -34,7 +36,11 @@ class FollowingViewModel : ViewModel() {
         })
     }
 
-    fun getFollowing() : LiveData<ArrayList<User>> {
+    fun getFollowing(): LiveData<ArrayList<User>> {
         return userList
+    }
+
+    fun noConnection(): LiveData<String> {
+        return noConnection
     }
 }

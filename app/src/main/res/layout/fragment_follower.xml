@@ -37,4 +37,30 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/no_internet_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/img_no_internet"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:contentDescription="@string/offline"
+            android:src="@drawable/offline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/offline"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
 </RelativeLayout>
